@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss ./assets/style/tailwind.css -o ./assets/style/main.css",
+    "build:watch": "postcss ./assets/style/tailwind.css -o ./assets/style/main.css --watch",
+    "purged:css": "npx tailwind -o ./assets/style/main.css --jit --purge './**/*.html' -w"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "postcss-cli": "^9.0.1",
+    "tailwindcss": "^2.2.16"
+  }
+}
