@@ -57,6 +57,20 @@ window.addEventListener("scroll", () => {
 
 //active class add on scroll
 
+//scroll to top
+const scrollToTop = document.querySelector(".scrollToTop");
+
+window.addEventListener("scroll", (e) => {
+  if (scrollY > 200) {
+    scrollToTop.style.transform = "translateY(0)";
+    scrollToTop.style.opacity = "1";
+  } else {
+    scrollToTop.style.transform = "translateY(80px)";
+    scrollToTop.style.opacity = "0";
+  }
+});
+//scroll to top
+
 // show/hide sidebar
 const menu = document.querySelector(".menu");
 mainBar.addEventListener("click", (e) => {

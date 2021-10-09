@@ -18,7 +18,6 @@
 
   <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
 
-
   <style>
     html {
       scroll-behavior: smooth;
@@ -153,7 +152,7 @@
 <body class="text-white font-stolzl relative">
 
   <!-- mobile menu  -->
-  <div class="menu bg-main w-full h-screen fixed top-0 -left-full transition-all duration-200">
+  <div style="z-index: 999999999;" class="menu bg-main w-full h-screen fixed top-0 -left-full transition-all duration-200">
     <div class="relative">
       <svg class="sidebarClose absolute top-4 cursor-pointer right-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
@@ -182,7 +181,8 @@
   </div>
   <!-- mobile menu  -->
   <main class="">
-    <div class="">
+    <div class="relative">
+      <div class="absolute top-0 left-0 h-screen" id="particles-js"></div>
 
 
       <!-- =====================================================================
@@ -191,10 +191,7 @@
       <header id="me" class="section me overflow-hidden">
 
         <!-- navigation menu starts here  -->
-        <div style="background-image: url(''); " id="particles-js" class="absolute bg-cover bg-no-repeat bg-center w-full transition-all duration-500">
-
-
-
+        <div class=" w-full transition-all duration-500">
 
           <div class="navigation transform transition-all duration-00 border-b border-accent bg-main w-full z-10">
 
@@ -18960,7 +18957,7 @@
                 </script>
                 <!-- header person animation  -->
               </div>
-              <div class="px-4 pb-5 text-center md:text-left z-50">
+              <div style="z-index: 0;" class="px-4 pb-5 text-center md:text-left">
                 <div class="">
                   <p class=" text-sm text-white font-sphere font-normal">
                     Hi, I'm <span class="font-bold">Ashik Prottoy</span>, Your
@@ -18980,7 +18977,7 @@
                   </p>
                 </div>
                 <div>
-                  <a href="./assets/pdf/Ashik_CV.pdf" target="_blank" class="inline-block px-10 py-3 text-sm font-medium rounded-md border border-transparent hover:bg-transparent hover:text-heighlight hover:border-heighlight transition-all duration-300 bg-heighlight mt-14 md:mt-10 " download>My
+                  <a style="z-index: 9999999;" href="./assets/pdf/Ashik_CV.pdf" target="_blank" class="inline-block px-10 py-3 text-sm font-medium rounded-md border border-transparent hover:bg-transparent hover:text-heighlight hover:border-heighlight transition-all duration-300 bg-heighlight mt-14 md:mt-10" download>My
                     Resume</a>
                 </div>
               </div>
@@ -20419,7 +20416,7 @@
             <!-- footer contact info -->
 
             <!-- footer copyright section  -->
-            <div data-aos="fade-up" data-aos-delay="110" class="mt-6 lg:flex lg:justify-between lg:flex-row-reverse lg:items-center">
+            <div data-aos="up" data-aos-delay="100" class="mt-6 lg:flex lg:justify-between lg:flex-row-reverse lg:items-center">
               <!-- footer copyright social links -->
               <div class="flex space-x-3 items-center justify-center">
                 <div>
@@ -20465,6 +20462,8 @@
 
             </div>
             <!-- footer copyright section  -->
+
+
           </div>
         </div>
       </section>
@@ -20474,6 +20473,17 @@
 ===================================================================== -->
     </div>
   </main>
+
+  <!-- to the top bottom  -->
+  <a href="#me">
+    <div class="scrollToTop fixed bottom-10 transform translate-y-20 transition-all duration-500 right-8 opacity-0">
+      <div class="cursor-pointer w-10 h-10 bg-heighlight  shadow-2xl  rounded-full flex justify-center items-center text-main font-bold">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 15l-6-6-6 6" /></svg>
+      </div>
+    </div>
+  </a>
+  <!-- to the top bottom  -->
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
