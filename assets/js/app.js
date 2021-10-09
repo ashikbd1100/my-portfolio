@@ -33,6 +33,30 @@ const mainBar = document.querySelector("#main-bar");
 //   }
 // });
 
+//active class add on scroll
+const section = document.querySelectorAll(".section");
+const navItem = document.querySelectorAll("header .big-screen-menu ul li a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  section.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.clientHeight;
+    if (scrollY >= sectionTop - sectionHeight / 3) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navItem.forEach((a) => {
+    a.classList.remove("font-bold");
+    if (a.classList.contains(current)) {
+      a.classList.add("font-bold");
+    }
+  });
+});
+
+//active class add on scroll
+
 // show/hide sidebar
 const menu = document.querySelector(".menu");
 mainBar.addEventListener("click", (e) => {
@@ -61,8 +85,6 @@ sidebarClose.addEventListener("click", (e) => {
 
 const bigTab = document.querySelectorAll(".big-tab-item");
 const bigContents = document.querySelectorAll(".big-tab-body");
-
-console.log(bigTab);
 
 for (let i = 0; i < bigTab.length; i++) {
   bigTab[i].addEventListener("click", (e) => {
@@ -146,24 +168,24 @@ $(document).ready(function () {
 
 //add active class on nav item
 
-const item = document.querySelectorAll(".nav-item");
-const itemSmall = document.querySelectorAll(".nav-item-small");
+// const item = document.querySelectorAll(".nav-item");
+// const itemSmall = document.querySelectorAll(".nav-item-small");
 
-item.forEach((b) => {
-  b.addEventListener("click", (e) => {
-    item.forEach((el) => el.classList.remove("font-bold"));
-    b.classList.add("font-bold");
-  });
-});
-item[0].click();
+// item.forEach((b) => {
+//   b.addEventListener("click", (e) => {
+//     item.forEach((el) => el.classList.remove("font-bold"));
+//     b.classList.add("font-bold");
+//   });
+// });
+// item[0].click();
 
-itemSmall.forEach((b) => {
-  b.addEventListener("click", (e) => {
-    itemSmall.forEach((el) => el.classList.remove("font-bold"));
-    b.classList.add("font-bold");
-  });
-});
-itemSmall[0].click();
+// itemSmall.forEach((b) => {
+//   b.addEventListener("click", (e) => {
+//     itemSmall.forEach((el) => el.classList.remove("font-bold"));
+//     b.classList.add("font-bold");
+//   });
+// });
+// itemSmall[0].click();
 
 // scroll animation
 AOS.init({
