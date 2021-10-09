@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
   <link rel="stylesheet" href="./assets/style/main.css" />
 
+  <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+
 
   <style>
     html {
@@ -151,7 +153,7 @@
 <body class="text-white font-stolzl relative">
 
   <!-- mobile menu  -->
-  <div style="z-index: 9999999;" class="menu bg-main w-full h-screen fixed top-0 -left-full z-10 transition-all duration-200">
+  <div class="menu bg-main w-full h-screen fixed top-0 -left-full transition-all duration-200">
     <div class="relative">
       <svg class="sidebarClose absolute top-4 cursor-pointer right-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0)">
@@ -170,8 +172,8 @@
       <div class="">
         <ul id="menu-center" style="min-height: 96vh;" class=" w-full flex flex-col justify-center  items-center">
           <li><a href="#me" class="nav-item-small inline-block font-light text-2xl mb-16">It's Me</a></li>
-          <li><a href="#projects" class="nav-item-small inline-block font-light text-2xl mb-16">Projects</a></li>
           <li><a href="#whyme" class="nav-item-small inline-block font-light text-2xl mb-16">Why me?</a></li>
+          <li><a href="#projects" class="nav-item-small inline-block font-light text-2xl mb-16">Projects</a></li>
           <li><a href="#contact" class="nav-item-small inline-block font-light text-2xl mb-16">Contact</a></li>
         </ul>
         <div class="text-center text-sm pb-6 font-stolzl font-light">© 2021 Ashik Prottoy. All Rights Reserved.</div>
@@ -186,7 +188,7 @@
       <!-- =====================================================================
         === Header Section Starts
         ===================================================================== -->
-      <header id="me" class="section me">
+      <header id="me" class="section me overflow-hidden">
 
         <!-- navigation menu starts here  -->
         <div style="background-image: url(''); " id="particles-js" class="absolute bg-cover bg-no-repeat bg-center w-full transition-all duration-500">
@@ -196,13 +198,13 @@
 
           <div class="navigation transform transition-all duration-00 border-b border-accent bg-main w-full z-10">
 
-            <div class="  max-w-full px-12 py-4 xl:max-w-8xl xl:mx-auto">
+            <div class="  max-w-full px-5 py-4 xl:max-w-8xl xl:mx-auto">
               <!-- <div class="absolute w-full h-full -z-1" id="particles-js"> -->
 
               <div class="flex items-center justify-between">
                 <!-- logo section starts  -->
                 <div>
-                  <a href="#me"><svg class="w-12" height="auto" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <a href="#me"><svg class="w-16" height="auto" viewBox="0 0 66 33" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="16.1946" cy="16.1948" r="7.63889" fill="#F55C59" />
                       <circle cx="49.8055" cy="16.1948" r="7.63889" fill="#F55C59" />
                       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -243,11 +245,11 @@
                         Me</a>
                     </li>
                     <li>
-                      <a href="#projects" class="nav-item projects inline-block text-sm font-light text-white font-stolzl">Projects</a>
-                    </li>
-                    <li>
                       <a href="#whyme" class="nav-item whyme inline-block text-sm font-light text-white font-stolzl">Why
                         me?</a>
+                    </li>
+                    <li>
+                      <a href="#projects" class="nav-item projects inline-block text-sm font-light text-white font-stolzl">Projects</a>
                     </li>
                     <li>
                       <a href="#contact" class="nav-item contact inline-block text-sm font-light text-white font-stolzl">Contact</a>
@@ -270,7 +272,7 @@
 
           <div class="px-4 py-10 bg-main md:w-11/12 md:mx-auto">
             <div class=" md:grid md:grid-cols-2 md:grid-flow-row-dense md:place-items-center">
-              <div class=" md:col-start-2 sm:w-108 sm:mx-auto md:mx-0 md:w-112 lg:w-134 xl:w-180">
+              <div class="md:col-start-2 sm:w-108 sm:mx-auto md:mx-0 md:w-112 lg:w-134 xl:w-180 py-10">
                 <!-- build:scripto -->
                 <script>
                   typeof navigator !== "undefined" &&
@@ -18960,7 +18962,7 @@
               </div>
               <div class="px-4 pb-5 text-center md:text-left z-50">
                 <div class="">
-                  <p class="text-sm text-white font-sphere font-normal">
+                  <p class=" text-sm text-white font-sphere font-normal">
                     Hi, I'm <span class="font-bold">Ashik Prottoy</span>, Your
                   </p>
                 </div>
@@ -18978,7 +18980,7 @@
                   </p>
                 </div>
                 <div>
-                  <a href="./assets/pdf/Ashik_CV.pdf" class="inline-block px-10 py-3 text-sm font-medium rounded-md border border-transparent hover:bg-transparent hover:text-heighlight hover:border-heighlight transition-all duration-300 bg-heighlight mt-14 md:mt-10 " download>My
+                  <a href="./assets/pdf/Ashik_CV.pdf" target="_blank" class="inline-block px-10 py-3 text-sm font-medium rounded-md border border-transparent hover:bg-transparent hover:text-heighlight hover:border-heighlight transition-all duration-300 bg-heighlight mt-14 md:mt-10 " download>My
                     Resume</a>
                 </div>
               </div>
@@ -18998,13 +19000,13 @@
         <div class="max-w-full px-4 py-20 xl:max-w-8xl xl:mx-auto bg-accent">
           <div class="text-center z-10">
             <!-- about tag  -->
-            <div class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
+            <div data-aos="fade-up" class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
               about
             </div>
             <!-- about tag  -->
 
             <!-- about header  -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="50">
               <h1 class="mt-6 text-2xl font-light sm:text-4xl z-50">
                 Who is <span class="font-bold">Ashik Prottoy</span>
               </h1>
@@ -19012,7 +19014,7 @@
             <!-- about header  -->
 
             <!-- about quote  -->
-            <div class="px-4 my-8 md:w-9/12 lg:w-7/12 xl:w-6/12 md:mx-auto">
+            <div data-aos="fade-up" data-aos-delay="70" class="px-4 my-8 md:w-9/12 lg:w-7/12 xl:w-6/12 md:mx-auto">
               <p class="text-sm leading-10 font-stolzlBook">
                 Why Do I Choose To Be A UX/UI Designer? Within this
                 technology, you get a chance to just explore and play with
@@ -19029,13 +19031,13 @@
             <!-- social links  -->
             <div>
               <!-- social links header  -->
-              <div class="mt-24 mb-12">
+              <div data-aos="fade-up" data-aos-delay="80" class="mt-24 mb-12">
                 <h1 class="text-3xl font-light">
                   My <span class="font-bold uppercase">Social</span>
                 </h1>
               </div>
               <!-- social links header  -->
-              <div class=" md:flex md:justify-center md:items-center md:space-x-10">
+              <div data-aos="fade-up" data-aos-delay="90" class=" md:flex md:justify-center md:items-center md:space-x-10">
                 <div class="flex items-center justify-center space-x-8 sm:space-x-14 md:space-x-10">
                   <a href="#" class="inline-block">
                     <svg class="transition-all duration-300 hover:text-heighlight" width="50" height="50" viewBox="0 0 57 57" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19115,13 +19117,13 @@
         <div class="max-w-full px-4 py-20 lg:py-0 lg:pt-24 lg:pb-40 bg-main xl:max-w-8xl xl:mx-auto">
           <div class="mb-8 text-center">
             <!-- skill tag  -->
-            <div class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
+            <div data-aos="fade-up" class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
               skill
             </div>
             <!-- skill tag  -->
 
             <!-- skill header  -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="40">
               <h1 class="mt-6 text-2xl font-light sm:text-4xl">
                 I'm <span class="font-bold">skilled at</span>
               </h1>
@@ -19241,13 +19243,13 @@
         <div class="max-w-full px-4 py-20 lg:py-0 lg:pt-24 lg:pb-40 bg-accent xl:max-w-8xl xl:mx-auto">
           <div class="mb-8 text-center">
             <!-- working hours tag  -->
-            <div class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
+            <div data-aos="fade-up" class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
               working hours
             </div>
             <!-- working hours tag  -->
 
             <!-- working hours header  -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="40">
               <h1 class="mt-6 text-2xl font-light sm:text-4xl">
                 I've <span class="font-bold">worked for</span>
               </h1>
@@ -19336,7 +19338,7 @@
           </div>
           <!-- Working Hours Details  -->
           <!-- working hours more details  -->
-          <div class="text-center">
+          <div data-aos="fade-up" data-aos-delay="70" class="text-center">
             <a href="#" class="inline-block text-light font-normal font-stolzl mt-14 underline transform transition-all duration-300 hover:bg-light hover:text-accent">Contact
               For More</a>
           </div>
@@ -19356,13 +19358,13 @@
           <!-- experience header  -->
           <div class="mb-8 text-center">
             <!-- experience hours tag  -->
-            <div class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
+            <div data-aos="fade-up" class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
               experience
             </div>
             <!-- experience hours tag  -->
 
             <!-- experience hours header  -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="40">
               <h1 class="mt-6 text-2xl font-light sm:text-4xl">
                 where I've <span class="font-bold">worked</span>
               </h1>
@@ -19822,13 +19824,13 @@
           <!-- project header  -->
           <div class="mb-8 text-center">
             <!-- project hours tag  -->
-            <div class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
+            <div data-aos="fade-up" class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
               project
             </div>
             <!-- project hours tag  -->
 
             <!-- project hours header  -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="40">
               <h1 class="mt-6 text-2xl font-light sm:text-4xl">
                 projects I've <span class="font-bold">worked</span>
               </h1>
@@ -20015,7 +20017,7 @@
 
 
           <!-- more about projects  -->
-          <div class="text-center mt-14">
+          <div data-aos="fade-up" data-aos-delay="70" class="text-center mt-14">
             <a href="#" class="inline-block underline text-light font-normal hover:bg-light hover:text-main transition-all duration-300">Want
               to see
               more?</a>
@@ -20034,13 +20036,13 @@
           <!-- testimonial header  -->
           <div class="mb-8 text-center">
             <!-- testimonial hours tag  -->
-            <div class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
+            <div data-aos="fade-up" class="inline-flex px-4 py-2 text-xs font-medium tracking-wider uppercase rounded-md font-stolzl bg-heighlight">
               recomendation
             </div>
             <!-- testimonial hours tag  -->
 
             <!-- testimonial hours header  -->
-            <div>
+            <div data-aos="fade-up" data-aos-delay="40">
               <h1 class="mt-6 text-2xl font-light sm:text-4xl">
                 Thought about <span class="font-bold">me</span>
               </h1>
@@ -20146,11 +20148,11 @@
           <!-- small screen testimonial  -->
 
           <!-- big screen testimonial  -->
-          <div class="mt-20 hidden lg:block">
+          <div data-aos="fade-up" data-aos-delay="70" class="mt-20 hidden lg:block">
 
             <div class="owl-carousel">
 
-              <div data-aos="fade-right">
+              <div>
                 <div class="bg-accent px-8 py-4 rounded-md ml-4 mx-auto  mb-3">
                   <!-- testimonial provider info  -->
                   <div class="w-full flex space-x-3 items-center pt-2">
@@ -20198,7 +20200,7 @@
               </div>
 
 
-              <div data-aos="fade-left">
+              <div>
                 <div class="bg-accent px-8 py-4 rounded-md ml-4 mx-auto  mb-3">
                   <!-- testimonial provider info  -->
                   <div class="w-full flex space-x-3 items-center pt-2">
@@ -20297,7 +20299,7 @@
 
 
 
-          <div class="text-center mt-16">
+          <div data-aos="fade-up" class="text-center mt-16">
             <a href="#" class="inline-block text-light font-stolzlBook underline hover:bg-light hover:text-accent transition-all duration-300 font-normal">Want
               to see more?</a>
           </div>
@@ -20313,19 +20315,19 @@
         <div class="max-w-full px-4 py-20 lg:py-0 lg:pt-24 lg:pb-40 bg-accent xl:max-w-8xl xl:mx-auto">
           <div class="mx-auto w-full bg-no-repeat bg-cover py-32 hidden lg:block" style="background-image: url('./images/contact-bg.png');">
             <!-- contact logo -->
-            <div class="">
+            <div data-aos="fade-up" class="">
               <img class="object-cover mx-auto" src="./images/cat.png" alt="">
             </div>
             <!-- contact logo -->
 
             <!-- contact header  -->
-            <div class="text-center">
+            <div data-aos="fade-up" data-aos-delay="40" class="text-center">
               <h1 class="text-xl lg:text-2xl xl:text-3xl font-bold mt-7">Send your thought to me</h1>
               <p class="text-sm font-normal mt-6">Stay up to date with me</p>
             </div>
             <!-- contact header  -->
             <!-- contact form  -->
-            <div class="mt-14">
+            <div data-aos="fade-up" data-aos-delay="70" class="mt-14">
               <form class="text-center xs:w-8/12 sm:w-6/12 lg:w-5/12 xl:w-4/12 xs:mx-auto" action="#">
                 <input type="text" class="bg-accetnLight text-sm font-stolzlBook w-full font-light py-4 px-4 rounded-lg focus:outline-none focus:ring-0" placeholder="Your name">
                 <input type="email" class="bg-accetnLight text-sm font-stolzlBook mt-3 w-full font-light py-4 px-4 rounded-lg focus:outline-none focus:ring-0" placeholder="example@email.com">
@@ -20376,11 +20378,11 @@
 === Footer Section Starts
 ===================================================================== -->
 
-      <section class="bg-main">
+      <section class="bg-main overflow-hidden">
         <div class="max-w-full px-4 py-20 lg:py-0 lg:pt-20 lg:pb-5 bg-main xl:max-w-8xl xl:mx-auto">
           <div>
             <!-- footer logo  -->
-            <div class="text-center">
+            <div data-aos="fade-up" class="text-center">
               <svg class="mx-auto" width="80" height="39" viewBox="0 0 80 39" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="19.5001" cy="19.5004" r="9.19811" fill="#F55C59" />
                 <circle cx="59.9718" cy="19.5004" r="9.19811" fill="#F55C59" />
@@ -20394,13 +20396,13 @@
             </div>
             <!-- footer logo  -->
             <!-- footer header  -->
-            <div class="text-center my-10">
+            <div data-aos="fade-up" data-aos-delay="40" class="text-center my-10">
               <h1 class="text-2xl xs:text-4xl font-stolzl font-bold">Seasoned. Nimble. <br class="sm:hidden">Remote.
               </h1>
             </div>
             <!-- footer header  -->
             <!-- footer description  -->
-            <div class="text-center px-4 sm:px-10 md:px-20 lg:px-52">
+            <div data-aos="fade-up" data-aos-delay="70" class="text-center px-4 sm:px-10 md:px-20 lg:px-52">
               <p class="font-light leading-8">We’re a diverse and passionate team that takes ownership of your design
                 and empower
                 you to execute the
@@ -20408,7 +20410,7 @@
             </div>
             <!-- footer description  -->
             <!-- footer contact info -->
-            <div class="text-center mt-10 border-b border-light pb-14">
+            <div data-aos="fade-up" data-aos-delay="90" class="text-center mt-10 border-b border-light pb-14">
               <a href="mailto:ashikbd1100@gmail.com" class="font-normal text-sm xs:text-base block"><span class="font-normal">Email:</span>
                 ashikbd1100@gmail.com</a>
               <a href="callto:+8801834911911" class="font-normal text-sm xs:text-base mt-2 block"><span class="font-normal">Mobile:</span>
@@ -20417,7 +20419,7 @@
             <!-- footer contact info -->
 
             <!-- footer copyright section  -->
-            <div class="mt-6 lg:flex lg:justify-between lg:flex-row-reverse lg:items-center">
+            <div data-aos="fade-up" data-aos-delay="110" class="mt-6 lg:flex lg:justify-between lg:flex-row-reverse lg:items-center">
               <!-- footer copyright social links -->
               <div class="flex space-x-3 items-center justify-center">
                 <div>
